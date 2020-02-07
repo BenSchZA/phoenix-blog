@@ -1,0 +1,18 @@
+{
+    "presets": ["@babel/preset-env"],
+    "plugins": [
+      [
+        "prismjs",
+        {
+          "languages": [
+            "bash",
+            "javascript"
+          ],
+          // themes can be found in this directory:
+          // assets/node_modules/prismjs/themes
+          "theme": "okaidia",
+          "css": true
+        }
+      ]
+    ]
+}

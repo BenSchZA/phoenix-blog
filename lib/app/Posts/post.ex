@@ -1,5 +1,5 @@
 defmodule App.Posts.Post do
-  defstruct slug: "", title: "", date: "", intro: "", content: ""
+  defstruct slug: "", draft: "", title: "", date: "", intro: "", content: ""
 
   def compile(file) do
     post = %App.Posts.Post{
@@ -18,7 +18,12 @@ defmodule App.Posts.Post do
 
   defp split(data) do
     [frontmatter, markdown] = String.split(data, ~r/\n-{3,}\n/, parts: 2)
-    {parse_yaml(frontmatter), Earmark.as_html!(markdown)}
+    {parse_yaml(frontmatter), Earmark.as_html!(
+      markdown,
+      %Earmark.Options{
+        code_class_prefix: "lang- language-"
+      }
+    )}
   end
 
   defp parse_yaml(yaml) do
@@ -28,6 +33,7 @@ defmodule App.Posts.Post do
 
   defp extract({props, content}, post) do
     %{post |
+      draft: convert_boolean!(get_prop(props, "draft")),
       title: get_prop(props, "title"),
       date: Timex.parse!(get_prop(props, "date"), "{ISOdate}"),
       intro: get_prop(props, "intro"),
@@ -40,4 +46,12 @@ defmodule App.Posts.Post do
       x -> to_string(x)
     end
   end
+
+  def convert_boolean!("true") do
+    true
+  end
+  def convert_boolean!("false") do
+    false
+  end
+
 end

@@ -14,10 +14,10 @@ defmodule AppWeb.Router do
   end
 
   scope "/", AppWeb do
-    pipe_through :browser # Use the default browser stack
+    pipe_through :browser
 
     get "/", PageController, :index
-    get "/:slug", PostController, :show
+    get "/posts/:slug", PostController, :show
   end
 
   # Other scopes may use custom stacks.

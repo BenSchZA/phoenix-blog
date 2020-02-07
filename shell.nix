@@ -25,8 +25,9 @@ mkShell {
       # mix local.hex
       # mix archive.install hex phx_new 1.4.10
       # mix ecto.create
-      # mix phx.server
-      mix phx.new app
-      mv app/* . && rm -r app
+      help () {
+        echo "Create new app: mix phx.new app"
+        echo "Start server: mix phx.server"
+      }
     '';
 }

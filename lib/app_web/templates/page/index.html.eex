@@ -1,45 +1,61 @@
-<div class="jumbotron">
-  <h2><%= gettext "Welcome to %{name}!", name: "Phoenix" %></h2>
-  <p class="lead">A productive web framework that<br />does not compromise speed and maintainability.</p>
+<section class="phx-hero">
+  <h1>I'm Ben ~ a mechatronics engineer by study, and software developer by trade.</h2>
+  <p>
+    I work remotely as a freelance consultant and developer.<br/>
+    I've worked on both hardware and software product development projects, token engineering consulting, full-stack blockchain development, and DevOps.<br/>
+    I also contribute to a number of open-source projects.<br/>
+    Drop me an <a href="mailto:contact@benjaminscholtz.com?Subject=Hello%20Ben" target="_top">e-mail</a> if you have an interesting idea or need a developer on-board!
+  </p>
+</section>
+
+<div class="media">
+  <img src="" class="align-self-start mr-3" alt="...">
+  <div class="media-body">
+    <h5 class="mt-0">Top-aligned media</h5>
+    <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
+    <p>Donec sed odio dui. Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+  </div>
 </div>
 
 <%= for post <- @posts do %>
-  <article class="row">
-    <h2><%= post.title %></h2>
-    <p><%= Timex.format!(post.date, "{Mshort} {D} {YYYY}") %></p>
-    <p><%= post.intro %></p>
-    <p><a href="<%= post_path(@conn, :show, post.slug) %>">Read post</a></p>
-  </article>
+  <div class="column">
+    <h2 class="row"><%= post.title %></h2>
+    <p class="row"><%= Timex.format!(post.date, "{Mshort} {D} {YYYY}") %></p>
+    <p class="row"><%= post.intro %></p>
+    <p class="row"><a href="<%= Routes.post_path(@conn, :show, post.slug) %>">Read post</a></p>
+  </div>
 <% end %>
 
-<div class="row marketing">
-  <div class="col-lg-6">
-    <h4>Resources</h4>
+<section class="row">
+  <article class="column">
+    <h2>Links</h2>
     <ul>
       <li>
-        <a href="http://phoenixframework.org/docs/overview">Guides</a>
+        <a href="https://twitter.com/BenScholtz">Twitter @BenScholtz</a>
       </li>
       <li>
-        <a href="https://hexdocs.pm/phoenix">Docs</a>
+        <a href="https://github.com/BenSchZA">GitHub @BenSchZA</a>
       </li>
       <li>
-        <a href="https://github.com/phoenixframework/phoenix">Source</a>
+        <a href="https://medium.com/@benscholtz">Medium @benscholtz</a>
+      </li>
+      <li>
+        <a href="https://stackoverflow.com/users/2351499/yodascholtz">StackOverflow @yodascholtz</a>
+      </li>
+      <li>
+        <a href="https://www.linkedin.com/in/benjaminscholtz/">LinkedIn @benjaminscholtz</a>
+      </li>
+      <li>
+        <a href="https://devpost.com/BenSchZA">DevPost @BenSchZA</a>
       </li>
     </ul>
-  </div>
-
-  <div class="col-lg-6">
-    <h4>Help</h4>
+  </article>
+  <article class="column">
+    <h2>Contact</h2>
     <ul>
       <li>
-        <a href="http://groups.google.com/group/phoenix-talk">Mailing list</a>
-      </li>
-      <li>
-        <a href="http://webchat.freenode.net/?channels=elixir-lang">#elixir-lang on freenode IRC</a>
-      </li>
-      <li>
-        <a href="https://twitter.com/elixirphoenix">@elixirphoenix</a>
+        <a href="mailto:contact@benjaminscholtz.com?Subject=Hello%20Ben" target="_top">Send e-mail</a>
       </li>
     </ul>
-  </div>
-</div>
+  </article>
+</section>
