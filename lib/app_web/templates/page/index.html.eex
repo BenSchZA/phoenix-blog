@@ -1,61 +1,19 @@
-<section class="phx-hero">
-  <h1>I'm Ben ~ a mechatronics engineer by study, and software developer by trade.</h2>
-  <p>
-    I work remotely as a freelance consultant and developer.<br/>
-    I've worked on both hardware and software product development projects, token engineering consulting, full-stack blockchain development, and DevOps.<br/>
-    I also contribute to a number of open-source projects.<br/>
-    Drop me an <a href="mailto:contact@benjaminscholtz.com?Subject=Hello%20Ben" target="_top">e-mail</a> if you have an interesting idea or need a developer on-board!
-  </p>
-</section>
-
-<div class="media">
-  <img src="" class="align-self-start mr-3" alt="...">
-  <div class="media-body">
-    <h5 class="mt-0">Top-aligned media</h5>
-    <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
-    <p>Donec sed odio dui. Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-  </div>
+<div class="shadow p-4 mb-6 bg-gray-100">
+    <div class="text-left">
+        <h3 class="mb-3 text-grey-darker">I'm Ben ~ a mechatronics engineer by study, and software developer by trade.</h3>
+        <p class="text-grey-dark leading-tight">
+          I work remotely as a freelance consultant and developer.<br/>
+          I've worked on both hardware and software product development projects, token engineering consulting, full-stack blockchain development, and DevOps.<br/>
+          I also contribute to a number of open-source projects.<br/>
+          Drop me an <a href="mailto:contact@benjaminscholtz.com?Subject=Hello%20Ben" target="_top">e-mail</a> if you have an interesting idea or need a developer on-board!
+        </p>
+    </div>
 </div>
 
 <%= for post <- @posts do %>
-  <div class="column">
-    <h2 class="row"><%= post.title %></h2>
-    <p class="row"><%= Timex.format!(post.date, "{Mshort} {D} {YYYY}") %></p>
-    <p class="row"><%= post.intro %></p>
-    <p class="row"><a href="<%= Routes.post_path(@conn, :show, post.slug) %>">Read post</a></p>
+  <div class="column pb-6">
+    <h2 class="row font-bold font-sans break-normal text-gray-900 pb-2 text-3xl md:text-3xl hover:text-gray-700 hover:text-underline"><a href="<%= Routes.post_path(@conn, :show, post.slug) %>"><%= post.title %></a></h2>
+    <p class="row text-sm md:text-base font-normal text-gray-600"><%= Timex.format!(post.date, "{Mshort} {D} {YYYY}") %></p>
+    <p class="row text-sm md:text-base font-normal text-gray-700"><%= post.intro %></p>
   </div>
 <% end %>
-
-<section class="row">
-  <article class="column">
-    <h2>Links</h2>
-    <ul>
-      <li>
-        <a href="https://twitter.com/BenScholtz">Twitter @BenScholtz</a>
-      </li>
-      <li>
-        <a href="https://github.com/BenSchZA">GitHub @BenSchZA</a>
-      </li>
-      <li>
-        <a href="https://medium.com/@benscholtz">Medium @benscholtz</a>
-      </li>
-      <li>
-        <a href="https://stackoverflow.com/users/2351499/yodascholtz">StackOverflow @yodascholtz</a>
-      </li>
-      <li>
-        <a href="https://www.linkedin.com/in/benjaminscholtz/">LinkedIn @benjaminscholtz</a>
-      </li>
-      <li>
-        <a href="https://devpost.com/BenSchZA">DevPost @BenSchZA</a>
-      </li>
-    </ul>
-  </article>
-  <article class="column">
-    <h2>Contact</h2>
-    <ul>
-      <li>
-        <a href="mailto:contact@benjaminscholtz.com?Subject=Hello%20Ben" target="_top">Send e-mail</a>
-      </li>
-    </ul>
-  </article>
-</section>
