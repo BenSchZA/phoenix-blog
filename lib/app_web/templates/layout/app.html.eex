@@ -36,13 +36,13 @@
             <a class="inline-block py-2 px-4 text-gray-900 font-bold no-underline" href="/#">About</a>
 					</li>
 					<li class="mr-3">
-            <a class="inline-block text-gray-600 no-underline hover:text-gray-900 hover:text-underline py-2 px-4" href="/#">Work</a>
+            <a class="inline-block text-sea-green no-underline hover:text-gray-900 hover:text-underline py-2 px-4" href="/#">Work</a>
 					</li>
 					<li class="mr-3">
-            <a class="inline-block text-gray-600 no-underline hover:text-gray-900 hover:text-underline py-2 px-4" href="/#">Projects</a>
+            <a class="inline-block text-sea-green no-underline hover:text-gray-900 hover:text-underline py-2 px-4" href="/#">Projects</a>
 					</li>
           <li class="mr-3">
-            <a class="inline-block text-gray-600 no-underline hover:text-gray-900 hover:text-underline py-2 px-4" href="mailto:contact@benjaminscholtz.com?Subject=Hello%20Ben" target="_top">Contact</a>
+            <a class="inline-block text-sea-green no-underline hover:text-gray-900 hover:text-underline py-2 px-4" href="mailto:contact@benjaminscholtz.com?Subject=Hello%20Ben" target="_top">Contact</a>
           </li>
 				</ul>
 			</div>
@@ -134,16 +134,15 @@
 
     if(scrollpos > 10){
       header.classList.add("bg-white");
-	  header.classList.add("shadow");
-	  navcontent.classList.remove("bg-gray-100");
-	  navcontent.classList.add("bg-white");
+      header.classList.add("shadow");
+      navcontent.classList.remove("bg-gray-100");
+      navcontent.classList.add("bg-white");
     }
     else {
-	  header.classList.remove("bg-white");
-	  header.classList.remove("shadow");
-	  navcontent.classList.remove("bg-white");
-	  navcontent.classList.add("bg-gray-100");
-	  
+      header.classList.remove("bg-white");
+      header.classList.remove("shadow");
+      navcontent.classList.remove("bg-white");
+      navcontent.classList.add("bg-gray-100");
     }
 
 	});

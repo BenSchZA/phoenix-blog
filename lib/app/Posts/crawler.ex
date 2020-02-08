@@ -3,7 +3,7 @@ defmodule App.Posts.Crawler do
     # File.ls!("priv/posts")
     # |> Enum.map(&App.Posts.Post.compile/1)
     # |> Enum.sort(&sort/2)
-    File.ls!("priv/posts")
+    File.ls!(Application.app_dir(:app, "priv/posts"))
     |> Enum.map(fn(file) -> Task.async(fn -> App.Posts.Post.compile(file) end) end)
     |> Enum.map(&Task.await/1)
     |> Enum.filter(&draft/1)

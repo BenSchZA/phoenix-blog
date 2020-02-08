@@ -1,7 +1,7 @@
 ---
-title: Creating a Node package for ABI files
+title: Creating an NPM package for smart contract ABI files
 date: 2019-08-15
-intro: Generating an NPM package from smart contract ABI files
+intro: ""
 draft: false
 ---
 
