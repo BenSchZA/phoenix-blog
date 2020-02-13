@@ -8,12 +8,12 @@
 use Mix.Config
 
 config :app,
-  ecto_repos: [App.Repo]
+  ecto_repos: []
 
 # Configures the endpoint
 config :app, AppWeb.Endpoint,
-  url: [host: "localhost"],
-  secret_key_base: "WWf8jbdXHQwrwfcdKDuhIt8/SAnh4ERVWqgK+Hqd9Kf0JvZ0Nq3S6F0ICdL7opp7",
+  url: [host: System.get_env("HOST")],
+  secret_key_base: System.get_env("SECRET_KEY_BASE"),
   render_errors: [view: AppWeb.ErrorView, accepts: ~w(html json)],
   pubsub: [name: App.PubSub, adapter: Phoenix.PubSub.PG2]
 

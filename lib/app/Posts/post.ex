@@ -6,7 +6,7 @@ defmodule App.Posts.Post do
       slug: file_to_slug(file)
     }
 
-    Path.join(["priv/posts", file])
+    Path.join([Application.app_dir(:app, "priv/posts"), file])
     |> File.read!
     |> split
     |> extract(post)
