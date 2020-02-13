@@ -4,6 +4,6 @@
   <p class="text-sm md:text-base font-normal text-gray-600 pb-4"><%= Timex.format!(@post.date, "{Mshort} {D} {YYYY}") %></p>
 </div>
 
-<div class="md-content">
+<div class="content-md">
   <%= raw(@post.content) %>
 </div>

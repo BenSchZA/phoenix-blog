@@ -1,19 +1,37 @@
 <div class="shadow p-4 mb-6 bg-gray-100">
-    <div class="text-left">
-        <h3 class="mb-3 text-grey-darker">I'm Ben ~ a mechatronics engineer by study, and software developer by trade.</h3>
-        <p class="text-grey-dark leading-tight">
-          I work remotely as a freelance consultant and developer.<br/>
-          I've worked on both hardware and software product development projects, token engineering consulting, full-stack blockchain development, and DevOps.<br/>
-          I also contribute to a number of open-source projects.<br/>
-          Drop me an <a href="mailto:contact@benjaminscholtz.com?Subject=Hello%20Ben" target="_top">e-mail</a> if you have an interesting idea or need a developer on-board!
-        </p>
-    </div>
+  <div class="content text-left">
+    <p class="font-sans text-grey-dark">
+      I'm a freelance software developer.
+    </p>
+    <p>
+      A mechatronics engineer by study,
+      I strive to be a polymath and love applying systems thinking when building context in a given problem space.
+    </p>
+    <p class="font-sans text-grey-dark">
+      I've worked on both hardware and software product development, token engineering consulting, full-stack
+      blockchain application development, and DevOps for a number of projects.
+    </p>
+    <p class="font-sans text-grey-dark">
+      I also love addressing the
+      challenges of developer experience, the software development pipeline, and practising as a developer advocate
+      - soft skills that have helped me as a project lead.
+    </p>
+    <p class="font-sans text-grey-dark">
+      I maintain and contribute to a number of open-source projects, such as <a href="https://github.com/BenSchZA/pier">Pier</a>.<br />
+    </p>
+    <p class="font-sans text-grey-dark">
+      If you'd like to work with me on a problem or project, don't hesitate to drop me an <a href="mailto:contact@benjaminscholtz.com?Subject=Hello%20Ben" target="_top">e-mail</a>.
+    </p>
+  </div>
 </div>
 
 <%= for post <- @posts do %>
-  <div class="column pb-6">
-    <h2 class="row font-bold font-sans break-normal text-gray-900 pb-2 text-3xl md:text-3xl hover:text-gray-700 hover:text-underline"><a href="<%= Routes.post_path(@conn, :show, post.slug) %>"><%= post.title %></a></h2>
-    <p class="row text-sm md:text-base font-normal text-gray-600"><%= Timex.format!(post.date, "{Mshort} {D} {YYYY}") %></p>
-    <p class="row text-sm md:text-base font-normal text-gray-700"><%= post.intro %></p>
-  </div>
+<div class="column pb-6">
+  <h2
+    class="row font-bold font-sans break-normal text-gray-900 pb-2 text-3xl md:text-3xl hover:text-gray-700 hover:text-underline">
+    <a href="<%= Routes.post_path(@conn, :show, post.slug) %>"><%= post.title %></a></h2>
+  <p class="row text-sm md:text-base font-normal text-gray-600"><%= Timex.format!(post.date, "{Mshort} {D} {YYYY}") %>
+  </p>
+  <p class="row text-sm md:text-base font-normal text-gray-700"><%= post.intro %></p>
+</div>
 <% end %>
