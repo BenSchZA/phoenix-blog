@@ -14,7 +14,8 @@ defmodule App.Application do
       AppWeb.Endpoint,
       # Starts a worker by calling: App.Worker.start_link(arg)
       # {App.Worker, arg},
-      {App.Posts.Repo, []}
+      {App.Posts.Repo, []},
+      {App.Projects.Repo, []},
     ]
 
     # See https://hexdocs.pm/elixir/Supervisor.html
