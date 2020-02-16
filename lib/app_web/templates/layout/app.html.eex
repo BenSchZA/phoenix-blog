@@ -28,7 +28,7 @@
 				</a>
 			</div>
 
-			<div class="block lg:hidden pr-4">
+			<div class="block md:hidden pr-4">
 				<button id="nav-toggle"
 					class="flex items-center px-3 py-2 border rounded text-gray-500 border-gray-600 hover:text-gray-900 hover:border-teal-500 appearance-none focus:outline-none">
 					<svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
@@ -38,22 +38,22 @@
 				</button>
 			</div>
 
-			<div class="w-full flex-grow lg:flex lg:items-center lg:w-auto hidden lg:block mt-2 lg:mt-0 bg-gray-100 md:bg-transparent z-20"
+			<div class="w-full flex-grow md:flex md:items-center md:w-auto hidden md:block mt-2 md:mt-0 bg-gray-100 sm:bg-transparent z-20"
 				id="nav-content">
-				<ul class="list-reset lg:flex justify-end flex-1 items-center">
+				<ul class="list-reset md:flex justify-end flex-1 items-center">
 					<li class="mr-3">
-						<a class="inline-block py-2 px-4 text-gray-900 font-bold no-underline" href="/#">About</a>
+						<a class="menu-link <%= active_class(@conn, Routes.page_path(@conn, :index))%>" href="/#">About</a>
 					</li>
-					<li class="mr-3">
-						<a class="inline-block text-sea-green no-underline hover:text-gray-900 hover:text-underline py-2 px-4"
+					<!-- <li class="mr-3">
+						<a class="menu-link"
 							href="/#">Work</a>
-					</li>
+					</li> -->
 					<li class="mr-3">
-						<a class="inline-block text-sea-green no-underline hover:text-gray-900 hover:text-underline py-2 px-4"
+						<a class="menu-link <%= active_class(@conn, Routes.project_path(@conn, :index))%>"
 							href="<%= Routes.project_path(@conn, :index) %>">Projects</a>
 					</li>
 					<li class="mr-3">
-						<a class="inline-block text-sea-green no-underline hover:text-gray-900 hover:text-underline py-2 px-4"
+						<a class="menu-link"
 							href="mailto:contact@benjaminscholtz.com?Subject=Hello%20Ben" target="_top">Contact</a>
 					</li>
 				</ul>
