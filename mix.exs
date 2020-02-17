@@ -50,7 +50,9 @@ defmodule App.MixProject do
       {:plug_cowboy, "~> 2.0"},
       {:earmark, "~> 1.4.3"},
       {:timex, "~> 3.6.1"},
-      {:yamerl, github: "yakaz/yamerl"}
+      {:yamerl, github: "yakaz/yamerl"},
+      {:tentacat, "~> 1.0"},
+      {:memoize, "~> 1.2"},
     ]
   end
 

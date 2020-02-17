@@ -3,6 +3,6 @@ defmodule AppWeb.AboutController do
 
   def index(conn, _params) do
     {:ok, post} = App.Pages.Repo.get_by_slug("about")
-    render conn, "index.html", post: post
+    render(conn, "index.html", post: post)
   end
 end

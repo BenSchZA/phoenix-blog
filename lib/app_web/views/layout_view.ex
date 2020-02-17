@@ -9,4 +9,8 @@ defmodule AppWeb.LayoutView do
       nil
     end
   end
+
+  def avatar_url() do
+    App.Github.Api.avatar_url()
+  end
 end

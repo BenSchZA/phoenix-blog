@@ -14,6 +14,10 @@
 @import "tailwindcss/utilities";
 
 /* Put your custom utilities here */
+.avatar {
+    line-height: 2.5rem;
+}
+
 .menu-link {
     @apply inline-block;
     @apply py-2;
@@ -52,6 +56,12 @@
     @apply text;
     @apply mt-8;
     @apply mb-8;
+}
+.content-md ol {
+    @apply list-decimal;
+}
+.content-md ul {
+    @apply list-disc;
 }
 a {
     color: #4dc0b5;
