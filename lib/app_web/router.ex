@@ -20,6 +20,7 @@ defmodule AppWeb.Router do
     get "/posts/:slug", PostController, :show
     get "/projects", ProjectController, :index
     get "/projects/:slug", ProjectController, :show
+    get "/about", AboutController, :index
   end
 
   # Other scopes may use custom stacks.

@@ -42,7 +42,8 @@
 				id="nav-content">
 				<ul class="list-reset md:flex justify-end flex-1 items-center">
 					<li class="mr-3">
-						<a class="menu-link <%= active_class(@conn, Routes.page_path(@conn, :index))%>" href="/#">About</a>
+						<a class="menu-link <%= active_class(@conn, Routes.about_path(@conn, :index))%>"
+							href="<%= Routes.about_path(@conn, :index) %>">About</a>
 					</li>
 					<!-- <li class="mr-3">
 						<a class="menu-link"
@@ -53,8 +54,8 @@
 							href="<%= Routes.project_path(@conn, :index) %>">Projects</a>
 					</li>
 					<li class="mr-3">
-						<a class="menu-link"
-							href="mailto:contact@benjaminscholtz.com?Subject=Hello%20Ben" target="_top">Contact</a>
+						<a class="menu-link" href="mailto:contact@benjaminscholtz.com?Subject=Hello%20Ben"
+							target="_top">Contact</a>
 					</li>
 				</ul>
 			</div>
@@ -80,7 +81,7 @@
 					<div class="px-8">
 						<h3 class="font-bold text-gray-900">About</h3>
 						<p class="py-4 text-gray-600 text-sm">
-							I'm Ben ~ a mechatronics engineer by study, and software developer by trade.
+							I'm Ben ~ a mechatronics engineer and freelance software developer.
 							Drop me an <a href="mailto:contact@benjaminscholtz.com?Subject=Hello%20Ben"
 								target="_top">e-mail</a> and let me know what you're working on!
 						</p>

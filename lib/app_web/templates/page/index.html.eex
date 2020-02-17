@@ -4,12 +4,12 @@
       I'm a freelance software developer.
     </p>
     <p>
-      A mechatronics engineer by study,
+      Having studied mechatronics engineering,
       I strive to be a polymath and love applying systems thinking when building context in a given problem space.
     </p>
     <p class="font-sans text-grey-dark">
       I've worked on both hardware and software product development, token engineering, full-stack
-      blockchain application development, and DevOps for a number of projects.
+      fintech application development, and DevOps for a number of projects.
     </p>
     <p class="font-sans text-grey-dark">
       I also love addressing the
@@ -22,6 +22,11 @@
     <p class="font-sans text-grey-dark">
       If you'd like to work with me on a problem or project, don't hesitate to drop me an <a href="mailto:contact@benjaminscholtz.com?Subject=Hello%20Ben" target="_top">e-mail</a>.
     </p>
+    <a href="<%= Routes.about_path(@conn, :index) %>">
+      <button class="menu-link font-semibold py-2 px-4 border border-blue-500 hover:border-transparent rounded">
+        Read more
+      </button>
+    </a>
   </div>
 </div>
 
