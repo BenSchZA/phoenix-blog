@@ -32,13 +32,12 @@ RUN mix deps.compile
 # build assets
 COPY assets assets
 RUN cd assets && npm install && npm run deploy
+RUN mix phx.digest
 
 # build project
 COPY priv priv
 COPY lib lib
-
 RUN mix compile
-RUN mix phx.digest
 
 # build release
 # COPY rel rel
