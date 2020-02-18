@@ -12,8 +12,8 @@
 	<link rel="stylesheet" href="<%= Routes.static_path(@conn, "/css/app.css") %>" />
 	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
 </head>
-
-<body class="bg-gray-200 font-sans leading-normal tracking-normal">
+  
+<body class="flex min-h-screen flex-col bg-gray-200 font-sans leading-normal tracking-normal">
 
 	<nav id="header" class="fixed w-full z-10 top-0">
 
@@ -57,15 +57,15 @@
 							href="<%= Routes.project_path(@conn, :index) %>">Projects</a>
 					</li>
 					<li class="mr-3">
-						<a class="menu-link" href="mailto:contact@benjaminscholtz.com?Subject=Hello%20Ben"
-							target="_top">Contact</a>
+						<a class="menu-link <%= active_class(@conn, Routes.email_path(@conn, :index))%>"
+							href="<%= Routes.email_path(@conn, :index) %>">Contact</a>
 					</li>
 				</ul>
 			</div>
 		</div>
 	</nav>
 
-	<div class="container w-full md:max-w-3xl mx-auto pt-20">
+	<div class="flex-1 container w-full md:max-w-3xl mx-auto pt-20">
 		<div class="w-full px-4 md:px-6 text-xl text-gray-800 leading-normal">
 			<script type="text/javascript" src="<%= Routes.static_path(@conn, "/js/app.js") %>"></script>
 			<main role="main" class="container">
@@ -76,56 +76,7 @@
 		</div>
 	</div>
 
-	<footer class="bg-white border-t border-gray-400 shadow mt-16">
-		<div class="container max-w-4xl mx-auto flex py-8">
-
-			<div class="w-full mx-auto flex flex-wrap">
-				<div class="flex w-full md:w-1/2 ">
-					<div class="px-8">
-						<h3 class="font-bold text-gray-900">About</h3>
-						<p class="py-4 text-gray-600 text-sm">
-							I'm Ben ~ a mechatronics engineer and freelance software developer.
-							Drop me an <a href="mailto:contact@benjaminscholtz.com?Subject=Hello%20Ben"
-								target="_top">e-mail</a> and let me know what you're working on!
-						</p>
-					</div>
-				</div>
-
-				<div class="flex w-full md:w-1/2">
-					<div class="px-8">
-						<h3 class="font-bold text-gray-900">Social</h3>
-						<ul class="list-reset items-center text-sm pt-3">
-							<li>
-								<a class="inline-block text-gray-600 no-underline hover:text-gray-900 hover:text-underline py-1"
-									href="https://github.com/BenSchZA">GitHub @BenSchZA</a>
-							</li>
-							<li>
-								<a class="inline-block text-gray-600 no-underline hover:text-gray-900 hover:text-underline py-1"
-									href="https://stackoverflow.com/users/2351499/yodascholtz">StackOverflow
-									@yodascholtz</a>
-							</li>
-							<li>
-								<a class="inline-block text-gray-600 no-underline hover:text-gray-900 hover:text-underline py-1"
-									href="https://www.linkedin.com/in/benjaminscholtz/">LinkedIn @benjaminscholtz</a>
-							</li>
-							<li>
-								<a class="inline-block text-gray-600 no-underline hover:text-gray-900 hover:text-underline py-1"
-									href="https://twitter.com/BenScholtz">Twitter @benscholtz</a>
-							</li>
-							<li>
-								<a class="inline-block text-gray-600 no-underline hover:text-gray-900 hover:text-underline py-1"
-									href="https://medium.com/@benscholtz">Medium @benscholtz</a>
-							</li>
-							<li>
-								<a class="inline-block text-gray-600 no-underline hover:text-gray-900 hover:text-underline py-1"
-									href="https://devpost.com/BenSchZA">DevPost @BenSchZA</a>
-							</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</div>
-	</footer>
+	<%= render "_footer.html", conn: @conn %>
 
 	<script>
 		/* Progress bar */

@@ -31,6 +31,19 @@ config :app, :github,
   username: System.get_env("GITHUB_USERNAME"),
   access_token: System.get_env("GITHUB_PAT")
 
+# Mailer configuration
+config :app, App.Mailer,
+  adapter: Bamboo.SMTPAdapter, #Bamboo.LocalAdapter
+  server: "smtp.sendgrid.net",
+  hostname: System.get_env("HOST"),
+  port: 587, #587,
+  username: System.get_env("SMTP_USERNAME"),
+  password: System.get_env("SMTP_PASSWORD"),
+  email: System.get_env("SMTP_EMAIL"),
+  tls: :if_available, # can be `:always` or `:never`
+  ssl: false, # can be `true`
+  retries: 1
+
 # Import environment specific config. This must remain at the bottom
 # of this file so it overrides the configuration defined above.
 import_config "#{Mix.env()}.exs"

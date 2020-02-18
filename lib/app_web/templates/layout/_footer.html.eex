@@ -1,0 +1,49 @@
+<footer class="bg-white border-t border-gray-400 shadow mt-16">
+    <div class="container max-w-6xl mx-auto flex py-8">
+
+        <div class="w-full mx-auto flex flex-wrap justify-evenly">
+            <div class="md:w-1/2">
+                <div class="px-8">
+                    <h3 class="font-bold text-gray-900">About</h3>
+                    <p class="py-4 text-gray-600 text-sm">
+                        I'm Ben ~ a mechatronics engineer and freelance software developer.
+                        Drop me an <a href="<%= Routes.email_path(@conn, :index) %>">e-mail</a> and let me know what you're working on!
+                    </p>
+                </div>
+            </div>
+
+            <div class="w-auto pb-8">
+                <div class="px-8">
+                    <h3 class="font-bold text-gray-900">Social</h3>
+                    <ul class="list-reset items-center text-sm pt-3">
+                        <li>
+                            <a class="inline-block text-gray-600 no-underline hover:text-gray-900 hover:text-underline py-1"
+                                href="https://github.com/BenSchZA">GitHub @BenSchZA</a>
+                        </li>
+                        <li>
+                            <a class="inline-block text-gray-600 no-underline hover:text-gray-900 hover:text-underline py-1"
+                                href="https://stackoverflow.com/users/2351499/yodascholtz">StackOverflow
+                                @yodascholtz</a>
+                        </li>
+                        <li>
+                            <a class="inline-block text-gray-600 no-underline hover:text-gray-900 hover:text-underline py-1"
+                                href="https://www.linkedin.com/in/benjaminscholtz/">LinkedIn @benjaminscholtz</a>
+                        </li>
+                        <li>
+                            <a class="inline-block text-gray-600 no-underline hover:text-gray-900 hover:text-underline py-1"
+                                href="https://twitter.com/BenScholtz">Twitter @benscholtz</a>
+                        </li>
+                        <li>
+                            <a class="inline-block text-gray-600 no-underline hover:text-gray-900 hover:text-underline py-1"
+                                href="https://medium.com/@benscholtz">Medium @benscholtz</a>
+                        </li>
+                        <li>
+                            <a class="inline-block text-gray-600 no-underline hover:text-gray-900 hover:text-underline py-1"
+                                href="https://devpost.com/BenSchZA">DevPost @BenSchZA</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>

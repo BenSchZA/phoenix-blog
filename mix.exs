@@ -24,7 +24,9 @@ defmodule App.MixProject do
         :logger,
         :runtime_tools,
         :timex,
-        :yamerl
+        :yamerl,
+        :bamboo,
+        :bamboo_smtp
       ]
     ]
   end
@@ -53,6 +55,8 @@ defmodule App.MixProject do
       {:yamerl, github: "yakaz/yamerl"},
       {:tentacat, "~> 1.0"},
       {:memoize, "~> 1.2"},
+      {:bamboo, "~> 1.4"},
+      {:bamboo_smtp, "~> 2.1.0"},
     ]
   end
 
