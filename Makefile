@@ -11,3 +11,6 @@ setup:
 start:
 	export MIX_ENV=dev
 	mix phx.server
+
+deploy:
+	docker-compose build && docker-compose push

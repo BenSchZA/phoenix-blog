@@ -25,6 +25,9 @@ config :logger, :console,
 # Use Jason for JSON parsing in Phoenix
 config :phoenix, :json_library, Jason
 
+config :app, :personal,
+  email: System.get_env("SMTP_EMAIL")
+
 # GitHub
 config :app, :github,
   handle: System.get_env("GITHUB_HANDLE"),
@@ -39,7 +42,6 @@ config :app, App.Mailer,
   port: 587, #587,
   username: System.get_env("SMTP_USERNAME"),
   password: System.get_env("SMTP_PASSWORD"),
-  email: System.get_env("SMTP_EMAIL"),
   tls: :if_available, # can be `:always` or `:never`
   ssl: false, # can be `true`
   retries: 1
