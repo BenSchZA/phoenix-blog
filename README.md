@@ -1,6 +1,6 @@
 # Phoenix Framework Blog
 
-![Screenshot](https://github.com/BenSchZA/phoenix-blog/raw/master/phoenix-blog-screenshot.png)
+![Screenshot](https://github.com/BenSchZA/phoenix-blog/raw/master/media/phoenix-blog-screenshot.png)
 
 ## Development
 
