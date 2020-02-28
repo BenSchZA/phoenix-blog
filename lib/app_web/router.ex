@@ -17,6 +17,7 @@ defmodule AppWeb.Router do
     pipe_through :browser
 
     get "/", PageController, :index
+    get "/posts", PostController, :index
     get "/posts/:slug", PostController, :show
     get "/projects", ProjectController, :index
     get "/projects/:slug", ProjectController, :show

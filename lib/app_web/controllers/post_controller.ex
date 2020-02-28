@@ -1,6 +1,11 @@
 defmodule AppWeb.PostController do
   use AppWeb, :controller
 
+  def index(conn, _params) do
+    {:ok, posts} = App.Posts.Repo.list()
+    render conn, "index.html", posts: posts
+  end
+
   def show(conn, %{"slug" => slug}) do
     case App.Posts.Repo.get_by_slug(slug) do
       {:ok, post} -> render conn, "show.html", post: post

@@ -1,12 +1,12 @@
 <span class="text-base md:text-sm text-teal-500 font-bold">&lt;<span> <a href="<%= Routes.page_path(@conn, :index) %>" class="text-base md:text-sm text-teal-500 font-bold no-underline hover:underline">BACK</a></p>
 <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-4">
   <%= for project <- @projects do %>
-  <div class="column pb-6">
-    <h2
-      class="row font-bold font-sans break-normal text-gray-900 pb-2 text-3xl md:text-3xl hover:text-gray-700 hover:text-underline">
-      <a href="<%= Routes.project_path(@conn, :show, project.slug) %>"><%= project.title %></a></h2>
-    <p class="row text-sm md:text-base font-normal text-gray-700"><%= project.intro %></p>
-    <!-- <img class="w-64" src="<%= project.cover %>" alt="Cover image"> -->
-  </div>
+    <div class="column pb-6">
+      <h2
+        class="row font-bold font-sans break-normal text-gray-900 pb-2 text-3xl md:text-3xl hover:text-gray-700 hover:text-underline">
+        <a href="<%= Routes.project_path(@conn, :show, project.slug) %>"><%= project.title %></a></h2>
+      <p class="row text-sm md:text-base font-normal text-gray-700"><%= project.intro %></p>
+      <!-- <img class="w-64" src="<%= project.cover %>" alt="Cover image"> -->
+    </div>
   <% end %>
 </div>

@@ -1,0 +1,10 @@
+<%= for post <- @posts do %>
+<div class="column pb-6">
+  <h2
+    class="row font-bold font-sans break-normal text-gray-900 pb-2 text-3xl md:text-3xl hover:text-gray-700 hover:text-underline">
+    <a href="<%= Routes.post_path(@conn, :show, post.slug) %>"><%= post.title %></a></h2>
+  <p class="row text-sm md:text-base font-normal text-gray-600"><%= Timex.format!(post.date, "{Mshort} {D} {YYYY}") %>
+  </p>
+  <p class="row text-sm md:text-base font-normal text-gray-700"><%= post.intro %></p>
+</div>
+<% end %>
