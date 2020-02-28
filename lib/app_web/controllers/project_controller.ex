@@ -3,7 +3,15 @@ defmodule AppWeb.ProjectController do
 
   def index(conn, _params) do
     {:ok, projects} = App.Projects.Repo.list()
-    render conn, "index.html", projects: projects
+    github_repos =  Enum.map([
+      "pier",
+      "molecule-alpha",
+      "molecule-system-modelling",
+      "mechatronics-engineering-thesis",
+      "nix-shells",
+      "wattie-whatsapp-bot"
+    ], fn repo -> App.Github.Api.github_repo(repo) end)
+    render conn, "index.html", projects: projects, github_repos: github_repos
   end
 
   def show(conn, %{"slug" => slug}) do

@@ -38,3 +38,4 @@ npm-debug.log
 .envrc
 .elixir_ls/
 production.nix
+.vscode/

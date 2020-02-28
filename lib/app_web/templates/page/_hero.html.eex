@@ -1,8 +1,52 @@
+<h1 class="mb-4 text-3xl sm:text-4xl md:text-5xl xl:text-4xl font-light leading-tight">
+    I'm a freelance software developer, with an engineering background and a strong problem solving skill set.
+</h1>
+
+<div class="flex flex-wrap -mx-2 -my-2 mb-8">
+  <div class="w-full sm:w-1/3 px-2 py-2">
+        <div class="shadow-lg max-w-sm w-full">
+            <div class="text-white bg-sea-green bg-orange-500 rounded-b lg:rounded-b-none lg:rounded-r p-2 flex flex-col justify-between leading-normal">
+                <div class="font-bold text-lg">MVPs</div>
+                <p class="text-base mb-2">
+                    Using agile workflows, a broad technical skill set, and product development market knowledge, I can quickly develop proof-of-concepts.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="w-full sm:w-1/3 px-2 py-2">
+        <div class="shadow-lg max-w-sm w-full">
+            <div class="text-white bg-sea-green rounded-b lg:rounded-b-none lg:rounded-r p-2 flex flex-col justify-between leading-normal">
+                <div class="font-bold text-lg">Application Development</div>
+                <p class="text-base mb-2">
+                    Phoenix and React are my frameworks of choice. I also have the DevOps and containerization experience to develop a robust and reliable system.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="w-full sm:w-1/3 px-2 py-2">
+        <div class="shadow-lg max-w-sm w-full">
+            <div class="text-white bg-sea-green rounded-b lg:rounded-b-none lg:rounded-r p-2 flex flex-col justify-between leading-normal">
+                <div class="font-bold text-lg">Engineering</div>
+                <p class="text-base mb-2">
+                    Systems engineering, token engineering, problem solving - building context from a background in mechatronics, control systems, and electronics.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<%= render "_tags.html", tags: @tags, conn: @conn %>
+
+<div class="mb-8">
+    <p class="font-sans text-grey-dark">
+        If you'd like to work with me on a problem or project, don't hesitate to drop me an
+        <a href="<%= Routes.email_path(@conn, :index) %>">e-mail</a>.
+    </p>
+</div>
+
+<!--
 <div class="shadow p-4 mb-6 bg-gray-100">
     <div class="content text-left">
-        <p class="font-sans text-grey-dark">
-            I'm a freelance software developer.
-        </p>
         <p>
             Having studied mechatronics engineering,
             I strive to be a polymath and love applying systems thinking when building context in a given problem space.
@@ -32,3 +76,4 @@
         </a>
     </div>
 </div>
+-->

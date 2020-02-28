@@ -1,7 +1,9 @@
-<%= render "_hero.html", conn: @conn %>
+<%= render "_hero.html", tags: @tags, conn: @conn %>
 
-<h2 class="text-2xl font-bold">Featured Repos</h2>
+<%# <h2 class="text-2xl font-bold mb-1">Skill Set</h2> %>
+
+<h2 class="text-2xl font-bold mb-1">Featured Repos</h2>
 <%= render "_repos.html", github_repos: @github_repos, conn: @conn %>
 
-<h2 class="text-2xl font-bold">Blog Posts</h2>
+<h2 class="text-2xl font-bold mb-1">Blog Posts</h2>
 <%= render "_posts.html", posts: @posts, conn: @conn %>
