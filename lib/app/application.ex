@@ -21,7 +21,7 @@ defmodule App.Application do
 
     # See https://hexdocs.pm/elixir/Supervisor.html
     # for other strategies and supported options
-    opts = [strategy: :one_for_one, name: App.Supervisor]
+    opts = [strategy: :one_for_all, name: App.Supervisor, max_restarts: 10, max_seconds: 30]
     Supervisor.start_link(children, opts)
   end
 
