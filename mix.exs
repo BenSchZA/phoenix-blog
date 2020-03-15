@@ -40,7 +40,7 @@ defmodule App.MixProject do
   # Type `mix help deps` for examples and options.
   defp deps do
     [
-      {:phoenix, "~> 1.4.10"},
+      {:phoenix, "~> 1.4.16"},
       {:phoenix_pubsub, "~> 1.1"},
       {:phoenix_ecto, "~> 4.0"},
       {:ecto_sql, "~> 3.1"},
@@ -54,7 +54,7 @@ defmodule App.MixProject do
       {:timex, "~> 3.6.1"},
       {:yamerl, github: "yakaz/yamerl"},
       {:tentacat, "~> 1.0"},
-      {:memoize, "~> 1.2"},
+      {:memoize, "~> 1.3"},
       {:bamboo, "~> 1.4"},
       {:bamboo_smtp, "~> 2.1.0"},
     ]
