@@ -18,5 +18,8 @@ services:
           GITHUB_HANDLE: $GITHUB_HANDLE
           GITHUB_USERNAME: $GITHUB_USERNAME
           GITHUB_PAT: $GITHUB_PAT
+          ERL_CRASH_DUMP: $ERL_CRASH_DUMP
     ports:
       - "$PORT:$PORT"
+    volumes:
+      - /var/log:/opt/log
