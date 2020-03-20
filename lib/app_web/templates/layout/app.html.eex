@@ -5,10 +5,10 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>Benjamin Scholtz</title>
-	<meta name="author" content="name">
-	<meta name="description" content="description here">
-	<meta name="keywords" content="keywords,here">
+	<title>Bits of Ether</title>
+	<meta name="author" content="Benjamin Scholtz">
+	<meta name="description" content="Freelance engineering and software development">
+	<meta name="keywords" content="engineering,software,fintech,automation">
 	<link rel="stylesheet" href="<%= Routes.static_path(@conn, "/css/app.css") %>" />
 	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
