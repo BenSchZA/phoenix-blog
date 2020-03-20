@@ -13,6 +13,7 @@ defmodule AppWeb.PageController do
       "wattie-whatsapp-bot"
     ], fn repo -> App.Github.Api.github_repo(repo) end)
     tags = Enum.sort([
+      "Android",
       "Ethereum",
       "Kubernetes",
       "Docker",

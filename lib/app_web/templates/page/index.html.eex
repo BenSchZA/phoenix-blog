@@ -5,6 +5,9 @@
 <h2 class="text-2xl font-bold mb-1">Clients</h2>
 <%= render "_clients.html", clients: @clients, conn: @conn %>
 
+<h2 class="text-2xl font-bold mb-1">Testimonials</h2>
+<%= render "_testimonials.html", conn: @conn %>
+
 <h2 class="text-2xl font-bold mb-1">Featured Repos</h2>
 <%= render "_repos.html", github_repos: @github_repos, conn: @conn %>
 

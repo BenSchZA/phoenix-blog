@@ -1,0 +1,18 @@
+<div class="flex flex-col mb-8">
+    <blockquote class="mb-2 flex flex-wrap flex-col bg-white text-indigo-700 border-l-8 italic border-gray-500 px-4 py-3 text-xs">
+        During the initial period of my consultation at Rooster, I assisted Ben with development of the Rooster Android
+        application. It soon became clear that, despite Ben not having had a lot of prior Android experience, he was
+        picking up on the Java language and Android framework at an incredibly fast rate, and our initial pairings and
+        mentoring sessions became fewer and fewer, as Ben rapidly increased his knowledge and proficiency of the
+        platform. Under Ben, the Rooster Android application has progressed into a beautiful and well-engineered
+        smartphone application. I do not exaggerate when I say Ben is extremely smart, and is the type of developer who
+        has the propensity to master whatever he puts his mind to. He is also very reliable, maintains very high coding
+        standards and has a great attention to detail. He is also one of the nicest people you'll meet and work with. I
+        can heartily recommend him for any development role he applies for.
+        <span class="flex justify-end text-sm text-indigo-400 font-semibold pt-2">Steven Ellis, Lead Developer at Afrolabs</span>
+    </blockquote>
+    <!-- <blockquote class="mb-2 flex flex-wrap flex-col bg-white text-indigo-700 border-l-8 italic border-gray-500 px-4 py-3 text-xs">
+        Test
+        <span class="flex justify-end text-sm text-indigo-400 font-semibold pt-2">Josh Perry, </span>
+    </blockquote> -->
+</div>

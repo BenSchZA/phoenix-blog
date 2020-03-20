@@ -1,4 +1,4 @@
-<div class="mb-8 text-center">
+<div class="mb-4 text-center">
   <%= for client <- @clients do %>
     <span class="inline-block bg-gray-100 rounded-full px-3 py-1 text-base font-semibold text-gray-700 mr-2 mb-2">
       <%= client %>
