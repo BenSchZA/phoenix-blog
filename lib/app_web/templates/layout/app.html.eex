@@ -11,6 +11,7 @@
 	<meta name="keywords" content="keywords,here">
 	<link rel="stylesheet" href="<%= Routes.static_path(@conn, "/css/app.css") %>" />
 	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
 </head>
   
 <body class="flex min-h-screen flex-col bg-gray-200 font-sans leading-normal tracking-normal">
@@ -44,6 +45,10 @@
 			<div class="w-full flex-grow md:flex md:items-center md:w-auto hidden md:block mt-2 md:mt-0 bg-gray-100 sm:bg-transparent z-20"
 				id="nav-content">
 				<ul class="list-reset md:flex justify-end flex-1 items-center">
+					<li class="mr-3">
+						  <a class="menu-link <%= active_class(@conn, Routes.page_path(@conn, :index))%>"
+							     href="/#">Home</a>
+					</li>
 					<li class="mr-3">
 						<a class="menu-link <%= active_class(@conn, Routes.about_path(@conn, :index))%>"
 							href="<%= Routes.about_path(@conn, :index) %>">About</a>

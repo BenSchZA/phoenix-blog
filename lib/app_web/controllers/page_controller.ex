@@ -7,11 +7,13 @@ defmodule AppWeb.PageController do
       "pier",
       "molecule-alpha",
       "molecule-system-modelling",
+      "ixo-liquidity-mechanism",
       "mechatronics-engineering-thesis",
       "nix-shells",
       "wattie-whatsapp-bot"
     ], fn repo -> App.Github.Api.github_repo(repo) end)
     tags = Enum.sort([
+      "Ethereum",
       "Kubernetes",
       "Docker",
       "Traefik",
@@ -40,6 +42,22 @@ defmodule AppWeb.PageController do
       "Unix",
       "Bash"
     ])
-    render conn, "index.html", posts: posts, github_repos: github_repos, tags: tags
+    clients = Enum.sort([
+      "Linum Labs",
+      "Molecule Protocol",
+      "Rooster Media",
+      "Zyteq Technologies",
+      "Strait Access Technologies",
+      "Protea Ecosystem",
+      "ManMakeMachine",
+      "ixo Foundation",
+      "Cloudline",
+      "Plentify"
+    ])
+    render conn, "index.html",
+      posts: posts,
+      github_repos: github_repos,
+      tags: tags,
+      clients: clients
   end
 end
