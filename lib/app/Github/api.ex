@@ -2,7 +2,7 @@ defmodule App.Github.Api do
   use Memoize
 
   @spec avatar_url :: String.t()
-  defmemo avatar_url(), expires_in: 5* 60 * 1000 do
+  defmemo avatar_url(), expires_in: 5 * 60 * 1000 do
     [handle: handle, username: _username, access_token: access_token] = Application.fetch_env!(:app, :github)
     client = Tentacat.Client.new(%{access_token: access_token})
     {200, data, _response} = Tentacat.Users.find(client, handle)

@@ -4,7 +4,7 @@ defmodule App.Projects.Crawler do
     |> Enum.map(fn(file) -> Task.async(fn -> App.Projects.Project.compile(file) end) end)
     |> Enum.map(&Task.await/1)
     |> Enum.filter(&draft/1)
-    |> Enum.sort(&sort/2)
+    |> Enum.sort_by(&(&1.title))
   end
 
   def sort(a, b) do

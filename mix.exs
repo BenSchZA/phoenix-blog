@@ -57,6 +57,7 @@ defmodule App.MixProject do
       {:memoize, "~> 1.3"},
       {:bamboo, "~> 1.4"},
       {:bamboo_smtp, "~> 2.1.0"},
+      {:httpoison, "~> 1.6"}
     ]
   end
 
