@@ -14,3 +14,12 @@ start:
 
 deploy:
 	docker-compose build && docker-compose push
+
+release:
+	mix local.hex --force && mix local.rebar --force
+	mix deps.get --only prod
+	mix deps.compile
+	cd assets && npm install && npm run deploy
+	mix phx.digest
+	mix compile
+	mix release
