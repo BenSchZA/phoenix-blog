@@ -23,3 +23,6 @@ release:
 	mix phx.digest
 	mix compile
 	mix release
+
+cookie:
+	cat _build/prod/rel/app/releases/COOKIE

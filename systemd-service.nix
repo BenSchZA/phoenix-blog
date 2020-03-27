@@ -5,7 +5,7 @@
         enable = true;
         wantedBy = [ "multi-user.target" ]; 
         after = [ "network.target" ];
-        description = "Start Phoenix/Elixir application";
+        description = "Personal Webapp: Phoenix/Elixir application";
         environment = {
             MIX_ENV = "prod";
             LANG = "en_US.UTF-8";

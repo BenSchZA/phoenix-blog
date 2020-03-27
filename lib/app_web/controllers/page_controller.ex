@@ -3,7 +3,7 @@ defmodule AppWeb.PageController do
 
   def index(conn, _params) do
     {:ok, posts} = App.Posts.Repo.list()
-    github_repos =  Enum.map([
+    github_repos = Enum.map([
       "pier",
       "molecule-alpha",
       "molecule-system-modelling",

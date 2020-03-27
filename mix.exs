@@ -53,11 +53,11 @@ defmodule App.MixProject do
       {:earmark, "~> 1.4.3"},
       {:timex, "~> 3.6.1"},
       {:yamerl, github: "yakaz/yamerl"},
-      {:tentacat, "~> 1.0"},
-      {:memoize, "~> 1.3"},
+      {:tentacat, "~> 1.6.1"},
       {:bamboo, "~> 1.4"},
       {:bamboo_smtp, "~> 2.1.0"},
-      {:httpoison, "~> 1.6"}
+      {:httpoison, "~> 1.6"},
+      {:cachex, "~> 3.2"}
     ]
   end
 
