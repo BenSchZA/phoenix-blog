@@ -26,10 +26,13 @@
     @apply no-underline;
 
     @apply text-sea-green;
+
+    @apply w-full;
 }
 
 .menu-link:hover {
     @apply text-gray-900;
+    @apply bg-gray-200;
     /* @apply underline; */
 }
 
