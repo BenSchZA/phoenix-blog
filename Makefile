@@ -9,8 +9,7 @@ setup:
 	cd assets && npm install
 
 start:
-	export MIX_ENV=dev
-	mix phx.server
+	MIX_ENV=dev mix phx.server
 
 deploy:
 	docker-compose build && docker-compose push
