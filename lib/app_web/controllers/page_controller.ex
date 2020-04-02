@@ -5,6 +5,7 @@ defmodule AppWeb.PageController do
     {:ok, posts} = App.Posts.Repo.list()
     github_repos = Enum.map([
       "pier",
+      "cadex",
       "system-modelling",
       "molecule-alpha",
       "ixo-liquidity-mechanism",

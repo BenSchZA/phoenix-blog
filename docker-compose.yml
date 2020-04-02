@@ -3,7 +3,7 @@ version: '3'
 
 services:
   phoenix-blog:
-    image: localhost:5000/phoenix-blog:latest
+    image: registry.bitsofether.com/phoenix-blog:latest
     build:
       context: .
       dockerfile: Dockerfile

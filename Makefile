@@ -4,7 +4,7 @@ update:
 
 setup:
 	mix local.hex --if-missing
-	mix archive.install hex phx_new 1.4.10
+	mix archive.install hex phx_new 1.4.16
 	mix deps.get
 	cd assets && npm install
 
