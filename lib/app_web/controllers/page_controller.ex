@@ -25,7 +25,7 @@ defmodule AppWeb.PageController do
       "Redux",
       "MongoDB",
       "NodeJS",
-      "Vue",
+      "VueJS",
       "TypeScript",
       "Phoenix",
       "Elixir",
@@ -38,11 +38,13 @@ defmodule AppWeb.PageController do
       "Rust",
       "HTML5",
       "CSS",
-      "Tailwind",
+      "TailwindCSS",
       "Nix",
       "NixOS",
       "Unix",
-      "Bash"
+      "Bash",
+      "AWS",
+      "Postgres"
     ])
     clients = Enum.sort([
       "Linum Labs",
@@ -54,7 +56,8 @@ defmodule AppWeb.PageController do
       "ManMakeMachine",
       "ixo Foundation",
       "Cloudline",
-      "Plentify"
+      "Plentify",
+      "Commons Stack"
     ])
     render conn, "index.html",
       posts: posts,

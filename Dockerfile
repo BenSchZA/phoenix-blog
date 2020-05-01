@@ -23,7 +23,6 @@ ARG SMTP_PASSWORD
 ARG GITHUB_HANDLE
 ARG GITHUB_USERNAME
 ARG GITHUB_PAT
-ARG ERL_CRASH_DUMP
 
 # install mix dependencies
 COPY mix.exs mix.lock ./
