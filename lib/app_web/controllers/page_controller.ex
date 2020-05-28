@@ -56,8 +56,9 @@ defmodule AppWeb.PageController do
       "ManMakeMachine",
       "ixo Foundation",
       "Cloudline",
-      "Plentify",
-      "Commons Stack"
+      # "Plentify",
+      "Commons Stack",
+      "Grassroots Economics"
     ])
     render conn, "index.html",
       posts: posts,
