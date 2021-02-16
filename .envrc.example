@@ -1,0 +1,22 @@
+set -au
+MIX_ENV=prod
+MIX_EXS=./app/mix.exs
+
+BRANCH=master
+
+HOST=
+PORT=
+
+SECRET_KEY_BASE=
+SMTP_EMAIL=
+SMTP_USERNAME=
+SMTP_PASSWORD=
+
+#ERL_CRASH_DUMP=/opt/log/erl_crash.dump
+
+#if [[ $STAGE == 'deploy' ]]; then
+#    DOCKER_HOST="ssh://dev@_"
+#else
+#    unset DOCKER_HOST
+#fi
+set +au

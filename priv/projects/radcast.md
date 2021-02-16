@@ -1,11 +1,11 @@
 ---
 title: Radcast
 date: 2019-08-15
-intro: Radcast is a customizable podcast delivered daily directly to you via WhatsApp. The web app allows you to customise the length and content. 
+intro: Radcast is a customizable podcast delivered daily directly to you via WhatsApp.
 draft: false
 cover: /images/radcast.png
 ---
 
-Hello, world!
+## Radcast: Personalized Podcast
 
-![Radcast Logo](/images/radcast.png)
+Developed a WhatsApp bot using Selenium to create a Python API for sending bulk media messages. Developed a React web app and NodeJS server allowing users to customize podcast content, duration, and delivery time.

@@ -1,4 +1,4 @@
-<span class="text-base md:text-sm text-teal-500 font-bold">&lt;<span> <a href="<%= Routes.page_path(@conn, :index) %>" class="text-base md:text-sm text-teal-500 font-bold no-underline hover:underline">BACK</a></p>
+<!-- <span class="text-base md:text-sm text-teal-500 font-bold">&lt;<span> <a href="<%= Routes.page_path(@conn, :index) %>" class="text-base md:text-sm text-teal-500 font-bold no-underline hover:underline">BACK</a></p> -->
 <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-4">
   <%= for project <- @projects do %>
     <div class="column pb-6">
