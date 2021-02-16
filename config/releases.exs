@@ -10,7 +10,7 @@ secret_key_base =
 config :app, AppWeb.Endpoint,
   server: true,
   http: [port: String.to_integer(System.get_env("PORT") || "4000")], # Needed for Phoenix 1.2 and 1.4. Doesn't hurt for 1.3.
-  url: [host: System.get_env("APP_NAME") <> ".gigalixirapp.com", port: 443],
+  url: [host: "bitsofether.com", port: 443],
   secret_key_base: secret_key_base,
   force_ssl: [rewrite_on: [:x_forwarded_proto]]
 
