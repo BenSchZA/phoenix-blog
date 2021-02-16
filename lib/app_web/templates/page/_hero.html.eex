@@ -25,7 +25,7 @@
             <div class="shadow-lg text-white bg-sea-green rounded-b rounded p-2 flex flex-col justify-between leading-normal">
                 <div class="font-bold text-lg">Application Development</div>
                 <p class="text-base mb-2">
-                    Phoenix and React are my frameworks of choice. I also have the DevOps and containerization experience to develop a robust and reliable system.
+                    Elixir Phoenix and React are my frameworks of choice. I also have the DevOps and containerization experience to develop a robust and reliable system.
                 </p>
             </div>
         </div>
@@ -77,7 +77,7 @@
     </div>
 </div>
 
-<%= render "_tags.html", tags: @tags, conn: @conn %>
+<%# render "_tags.html", tags: @tags, conn: @conn %>
 
 <!--
 <div class="shadow p-4 mb-6 bg-gray-100">
