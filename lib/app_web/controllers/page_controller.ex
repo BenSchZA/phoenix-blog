@@ -58,7 +58,9 @@ defmodule AppWeb.PageController do
       "Cloudline",
       # "Plentify",
       "Commons Stack",
-      "Grassroots Economics"
+      "Grassroots Economics",
+      "BlockScience",
+      "cadCAD Edu",
     ])
     render conn, "index.html",
       posts: posts,
