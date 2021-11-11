@@ -16,3 +16,10 @@ import Prism from 'prismjs'
 //
 // Local files can be imported directly using relative paths, for example:
 // import socket from "./socket"
+
+function recaptchaCallback() {
+    console.log('recaptchaCallback');
+    document.getElementById('submit').removeAttribute('disabled');
+}
+
+window.recaptchaCallback = recaptchaCallback;

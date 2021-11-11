@@ -26,7 +26,8 @@ defmodule App.MixProject do
         :timex,
         :yamerl,
         :bamboo,
-        :bamboo_smtp
+        :bamboo_smtp,
+        :recaptcha
       ]
     ]
   end
@@ -40,15 +41,15 @@ defmodule App.MixProject do
   # Type `mix help deps` for examples and options.
   defp deps do
     [
-      {:phoenix, "~> 1.4.16"},
-      {:phoenix_pubsub, "~> 1.1"},
+      {:phoenix, "~> 1.6.2"},
+      {:phoenix_pubsub, "~> 2.0.0"},
       {:phoenix_ecto, "~> 4.0"},
       {:ecto_sql, "~> 3.1"},
       {:postgrex, ">= 0.0.0"},
       {:phoenix_html, "~> 2.11"},
       {:phoenix_live_reload, "~> 1.2", only: :dev},
       {:gettext, "~> 0.17.4"},
-      {:jason, "~> 1.0"},
+      {:jason, "~> 1.2.2"},
       {:plug_cowboy, "~> 2.0"},
       {:earmark, "~> 1.4.3"},
       {:timex, "~> 3.6.1"},
@@ -57,7 +58,8 @@ defmodule App.MixProject do
       {:bamboo, "~> 1.4"},
       {:bamboo_smtp, "~> 2.1.0"},
       {:httpoison, "~> 1.6"},
-      {:cachex, "~> 3.2"}
+      {:cachex, "~> 3.2"},
+      {:recaptcha, "~> 3.0"},
     ]
   end
 
